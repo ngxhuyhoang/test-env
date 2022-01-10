@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android:developmentDebug": "npx react-native run-android --variant=developmentDebug --appId=com.testenv.development",
+    "android:devRelease": "npx react-native run-android --variant=developmentRelease --appId=com.testenv.development",
+    "android:productionDebug": "npx react-native run-android --variant=productionDebug --appId=com.testenv.production",
+    "android:productionRelease": "npx react-native run-android --variant=productionRelease --appId=com.testenv.production",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -11,7 +14,8 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.66.4"
+    "react-native": "0.66.4",
+    "react-native-config": "^1.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
